@@ -19,14 +19,26 @@
 &mt { quick_tap_ms = <200>; };
 
 / {
-    macros {
-        new_macro_sobaka: new_macro_sobaka {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp KP_NUMBER_6 &kp KP_NUMBER_4>;
-            label = "NEW_MACRO_SOBAKA";
-        };
+macros {
+    new_macro_sobaka: new_macro_sobaka {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp>;
+        label = "NEW_MACRO_SOBAKA";
+        actions = [
+            # Нажатие клавиши "Alt"
+            (KeyAction) { .type = ACTION_KEY, .key = KC_LALT, .state = ACTION_MODS_TAP_KEY },
+            # Нажатие клавиш "6" и "4" на числовой клавиатуре
+            (KeyAction) { .type = ACTION_KEY, .key = KC_KP_6, .state = ACTION_KEY_DOWN },
+            (KeyAction) { .type = ACTION_KEY, .key = KC_KP_4, .state = ACTION_KEY_DOWN },
+            # Отпускание клавиши "6" и "4"
+            (KeyAction) { .type = ACTION_KEY, .key = KC_KP_6, .state = ACTION_KEY_UP },
+            (KeyAction) { .type = ACTION_KEY, .key = KC_KP_4, .state = ACTION_KEY_UP },
+            # Отпускание клавиши "Alt"
+            (KeyAction) { .type = ACTION_KEY, .key = KC_LALT, .state = ACTION_MODS_RELEASE },
+        ];
     };
+};
 
     keymap {
         compatible = "zmk,keymap";
