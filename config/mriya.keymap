@@ -19,13 +19,14 @@
 &mt { quick_tap_ms = <200>; };
 
 / {
-macros {
-    new_macro_sobaka: new_macro_sobaka {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings = <&kp>;
-        label = "NEW_MACRO_SOBAKA";
-        actions = [
+    macros {
+        new_macro_sobaka: new_macro_sobaka {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp>;
+            label = "NEW_MACRO_SOBAKA";
+            actions =
+                [
             (KeyAction) { .type = ACTION_KEY, .key = KC_LALT, .state = ACTION_MODS_TAP_KEY },
             (KeyAction) { .type = ACTION_KEY, .key = KC_KP_6, .state = ACTION_KEY_DOWN },
             (KeyAction) { .type = ACTION_KEY, .key = KC_KP_4, .state = ACTION_KEY_DOWN },
@@ -33,8 +34,17 @@ macros {
             (KeyAction) { .type = ACTION_KEY, .key = KC_KP_4, .state = ACTION_KEY_UP },
             (KeyAction) { .type = ACTION_KEY, .key = KC_LALT, .state = ACTION_MODS_RELEASE },
         ];
+        };
     };
-};
+
+    combos {
+        compatible = "zmk,combos";
+
+        combo_f5 {
+            bindings = <&kp F5>;
+            key-positions = <18 30>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
