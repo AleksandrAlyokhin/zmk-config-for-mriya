@@ -32,7 +32,10 @@
         macro_alt_64: macro_alt_64 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT DOWN &kp KP_NUMBER_6 TAP &kp KP_NUMBER_4 TAP &kp LEFT_ALT UP>;
+            bindings = <&macro_press &kp LEFT_ALT
+                        &macro_tap &kp KP_NUMBER_6
+                        &macro_tap &kp KP_NUMBER_4
+                        &macro_release &kp LEFT_ALT>;
             label = "MACRO_ALT_64";
         };
     };
