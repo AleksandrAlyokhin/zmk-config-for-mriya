@@ -51,11 +51,11 @@
 
         default_layer {
             bindings = <
-  &kp LGUI   &kp N1  &kp N2     &kp N3     &kp N4            &kp N5         &kp F5       &kp F9          &kp F10    &kp F11                 &kp F12   &mt RIGHT_WIN RBKT
-  &kp GRAVE  &kp Q   &kp W      &kp E      &kp R             &kp T          &kp Y        &kp U           &kp I      &kp O                   &kp P     &kp LBKT
-  &kp LCTRL  &kp A   &kp S      &kp D      &kp F             &kp G          &kp H        &kp J           &kp K      &kp L                   &kp SEMI  &mt RCTRL SQT
-  &kp LALT   &kp Z   &kp X      &kp C      &kp V             &kp B          &kp N        &kp M           &kp COMMA  &kp DOT                 &kp FSLH  &mt RALT BSLH
-                     &kp LA(A)  &lt 1 TAB  &mt LSHFT ESCAPE  &lt 2 SPACE    &lt 2 ENTER  &mt RSHFT BSPC  &lt 1 DEL  &mt RGUI RIGHT_BRACKET
+  &kp LGUI   &kp N1  &kp N2     &kp N3     &kp N4            &kp N5         &kp F5       &kp F9          &kp F10    &kp F11  &kp F12   &mt RIGHT_WIN RBKT
+  &kp GRAVE  &kp Q   &kp W      &kp E      &kp R             &kp T          &kp Y        &kp U           &kp I      &kp O    &kp P     &kp LBKT
+  &kp LCTRL  &kp A   &kp S      &kp D      &kp F             &kp G          &kp H        &kp J           &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
+  &kp LALT   &kp Z   &kp X      &kp C      &kp V             &kp B          &kp N        &kp M           &kp COMMA  &kp DOT  &kp FSLH  &mt RALT BSLH
+                     &kp LA(A)  &lt 1 TAB  &mt LSHFT ESCAPE  &lt 4 SPACE    &lt 4 ENTER  &mt RSHFT BSPC  &lt 1 DEL  &tog 2
             >;
         };
 
@@ -65,21 +65,41 @@
   &kp UNDER       &kp F1    &kp F2         &kp F3     &kp F4    &kp F5       &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F11
   &mt LCTRL PLUS  &kp EXCL  &kp AT         &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &mt RCTRL MINUS
   &mt LALT EQUAL  &kp N1    &kp N2         &kp N3     &kp N4    &kp N5       &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &trans
-                            &trans         &lt 3 TAB  &trans    &trans       &trans     &trans    &lt 3 DEL  &trans
+                            &trans         &lt 0 TAB  &trans    &trans       &trans     &trans    &lt 0 DEL  &trans
             >;
         };
 
-        raise_layer {
+        default_layer_ru {
+            bindings = <
+  &kp LGUI   &kp N1  &kp N2     &kp N3     &kp N4            &kp N5         &kp F5       &kp F9          &kp F10    &kp F11                 &kp F12   &mt RIGHT_WIN RBKT
+  &kp GRAVE  &kp Q   &kp W      &kp E      &kp R             &kp T          &kp Y        &kp U           &kp I      &kp O                   &kp P     &kp LBKT
+  &kp LCTRL  &kp A   &kp S      &kp D      &kp F             &kp G          &kp H        &kp J           &kp K      &kp L                   &kp SEMI  &mt RCTRL SQT
+  &kp LALT   &kp Z   &kp X      &kp C      &kp V             &kp B          &kp N        &kp M           &kp COMMA  &kp DOT                 &kp FSLH  &mt RALT BSLH
+                     &kp LA(A)  &lt 3 TAB  &mt LSHFT ESCAPE  &lt 4 SPACE    &lt 4 ENTER  &mt RSHFT BSPC  &lt 3 DEL  &mt RGUI RIGHT_BRACKET
+            >;
+        };
+
+        lower_layer_ru {
+            bindings = <
+  &trans          &trans    &macro_alt_64  &trans     &trans    &trans       &trans     &trans    &trans     &trans    &trans    &trans
+  &kp UNDER       &kp F1    &kp F2         &kp F3     &kp F4    &kp F5       &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F11
+  &mt LCTRL PLUS  &kp EXCL  &kp AT         &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &mt RCTRL MINUS
+  &mt LALT EQUAL  &kp N1    &kp N2         &kp N3     &kp N4    &kp N5       &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &trans
+                            &trans         &lt 5 TAB  &trans    &trans       &trans     &trans    &lt 5 DEL  &trans
+            >;
+        };
+
+        raise_layer_new {
             bindings = <
   &trans           &trans           &trans  &trans        &trans  &trans          &trans           &trans        &trans         &trans         &trans           &trans
   &kp KP_NUM       &kp KP_SLASH     &kp N7  &kp N8        &kp N9  &kp KP_MINUS    &kp C_VOL_UP     &kp HOME      &kp UP         &kp END        &kp SLCK         &kp CAPS
   &mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp N4  &kp N5        &kp N6  &kp ENTER       &kp C_MUTE       &kp LEFT      &kp DOWN       &kp RIGHT      &kp INS          &mt RCTRL K_APP
   &trans           &kp N0           &kp N1  &kp NUMBER_2  &kp N3  &kp KP_DOT      &kp PRINTSCREEN  &kp LC(LEFT)  &kp BACKSPACE  &kp LC(RIGHT)  &kp PAUSE_BREAK  &trans
-                                    &trans  &trans        &trans  &lt 3 RET       &lt 3 ESC        &trans        &trans         &trans
+                                    &trans  &trans        &trans  &lt 0 RET       &lt 0 ESC        &trans        &trans         &trans
             >;
         };
 
-        adjust_layer {
+        adjust_layer_new {
             bindings = <
   &none        &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &none
   &bootloader  &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &bootloader
