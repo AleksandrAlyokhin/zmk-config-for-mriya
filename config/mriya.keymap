@@ -48,14 +48,14 @@
         macro_set_ru: macro_set_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tog 2 &kp LC(NUMBER_6)>;
+            bindings = <&to 2 &kp LC(NUMBER_6)>;
             label = "MACRO_SET_RU";
         };
 
         macro_set_en: macro_set_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tog 0 &kp LC(NUMBER_5)>;
+            bindings = <&to 0 &kp LC(NUMBER_5)>;
             label = "MACRO_SET_EN";
         };
     };
