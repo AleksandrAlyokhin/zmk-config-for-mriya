@@ -14,13 +14,13 @@
 #define RSE 2
 #define ADJ 3
 
-static int custom_counter = 0;
-
 &lt { quick_tap_ms = <200>; };
 
 &mt { quick_tap_ms = <200>; };
 
 / {
+    static int custom_counter = 0;
+    
     combos {
         compatible = "zmk,combos";
 
