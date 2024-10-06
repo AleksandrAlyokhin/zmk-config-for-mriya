@@ -19,8 +19,6 @@
 &mt { quick_tap_ms = <200>; };
 
 / {
-    static int custom_counter = 0;
-    
     combos {
         compatible = "zmk,combos";
 
