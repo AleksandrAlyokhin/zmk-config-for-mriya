@@ -75,7 +75,7 @@
 
         lower_layer {
             bindings = <
-  &kp E           &kp E     &macro_alt_64  &trans     &trans    &trans       &trans     &trans    &trans     &trans    &trans    &trans
+  &kp NUMBER_1    &kp N1    &macro_alt_64  &trans     &trans    &trans       &trans     &trans    &trans     &trans    &trans    &trans
   &kp UNDER       &kp F1    &kp F2         &kp F3     &kp F4    &kp F5       &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F11
   &mt LCTRL PLUS  &kp EXCL  &kp AT         &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &mt RCTRL MINUS
   &mt LALT EQUAL  &kp N1    &kp N2         &kp N3     &kp N4    &kp N5       &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &trans
@@ -85,21 +85,21 @@
 
         default_layer_ru {
             bindings = <
-  &kp LGUI   &kp N1  &kp N2     &kp N3     &kp R             &kp R          &kp F5       &kp F9          &kp F10    &kp F11        &kp F12   &mt RIGHT_WIN RBKT
-  &kp GRAVE  &kp Q   &kp W      &kp E      &kp R             &kp T          &kp Y        &kp U           &kp I      &kp O          &kp P     &kp LBKT
-  &kp LCTRL  &kp A   &kp S      &kp D      &kp F             &kp G          &kp H        &kp J           &kp K      &kp L          &kp SEMI  &mt RCTRL SQT
-  &kp LALT   &kp Z   &kp X      &kp C      &kp V             &kp B          &kp N        &kp M           &kp COMMA  &kp DOT        &kp FSLH  &mt RALT BSLH
-                     &kp LA(A)  &lt 3 TAB  &mt LSHFT ESCAPE  &lt 4 SPACE    &lt 4 ENTER  &mt RSHFT BSPC  &lt 3 DEL  &macro_set_en
+  &kp LGUI   &kp N1  &kp N2     &kp N3     &kp NUMBER_2      &kp NUMBER_2    &kp F5       &kp F9          &kp F10    &kp F11        &kp F12   &mt RIGHT_WIN RBKT
+  &kp GRAVE  &kp Q   &kp W      &kp E      &kp R             &kp T           &kp Y        &kp U           &kp I      &kp O          &kp P     &kp LBKT
+  &kp LCTRL  &kp A   &kp S      &kp D      &kp F             &kp G           &kp H        &kp J           &kp K      &kp L          &kp SEMI  &mt RCTRL SQT
+  &kp LALT   &kp Z   &kp X      &kp C      &kp V             &kp B           &kp N        &kp M           &kp COMMA  &kp DOT        &kp FSLH  &mt RALT BSLH
+                     &kp LA(A)  &lt 3 TAB  &mt LSHFT ESCAPE  &lt 4 SPACE     &lt 4 ENTER  &mt RSHFT BSPC  &lt 3 DEL  &macro_set_en
             >;
         };
 
         lower_layer_ru {
             bindings = <
-  &kp R           &kp R     &macro_alt_64  &trans     &trans    &trans       &trans     &trans    &trans     &trans    &trans    &trans
-  &kp UNDER       &kp F1    &kp F2         &kp F3     &kp F4    &kp F5       &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F11
-  &mt LCTRL PLUS  &kp EXCL  &kp AT         &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &mt RCTRL MINUS
-  &mt LALT EQUAL  &kp N1    &kp N2         &kp N3     &kp N4    &kp N5       &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &trans
-                            &trans         &lt 5 TAB  &trans    &trans       &trans     &trans    &lt 5 DEL  &trans
+  &kp NUMBER_3    &kp NUMBER_3  &macro_alt_64  &trans     &trans    &trans       &trans     &trans    &trans     &trans    &trans    &trans
+  &kp UNDER       &kp F1        &kp F2         &kp F3     &kp F4    &kp F5       &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F11
+  &mt LCTRL PLUS  &kp EXCL      &kp AT         &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &mt RCTRL MINUS
+  &mt LALT EQUAL  &kp N1        &kp N2         &kp N3     &kp N4    &kp N5       &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &trans
+                                &trans         &lt 5 TAB  &trans    &trans       &trans     &trans    &lt 5 DEL  &trans
             >;
         };
 
